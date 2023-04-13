@@ -92,6 +92,7 @@ a {
 /* CONTENT */
 .content {
     /*background-color: pink;*/
+    margin-top: 20px;
     min-height: 75vh;
 }
 
