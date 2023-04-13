@@ -1,5 +1,6 @@
 * {
     text-decoration: none;
+    list-style-type: none;
 }
 
 body {
@@ -106,9 +107,26 @@ a {
 }
 
 footer {
-    min-height: 25vh;
-    background-color: lightblue;
+    min-height: 100px;
+    /*background-color: lightblue;*/
     margin-top: 20px;
+}
+footer .container{
+    height: 100%;
+}
+.social{
+    /*background-color: pink;*/
+}
+.social p{
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.social-wrapper .image-wrapper{
+    width: 50px;
+}
+.social img{
+    width: 100%;
 }
 
 @media screen and (min-width: 768px) {
