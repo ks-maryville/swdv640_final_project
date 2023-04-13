@@ -95,8 +95,8 @@ a {
     min-height: 75vh;
 }
 
-.featured > .container > .row > .product,
-.top-sellers > .container > .row > .product {
+.featured > .container > .row > .d-flex >.product,
+.top-sellers > .container > .row > .d-flex >.product {
     background-color: beige;
     height: 300px;
     margin-bottom: 5px;
