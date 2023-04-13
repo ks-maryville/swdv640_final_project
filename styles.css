@@ -1,24 +1,101 @@
 *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     text-decoration: none;
 }
+body{
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* HEADER /*/
 
-/* Mobile-Phone*/
-.page-wrapper{
-    display: grid;
-    grid-template-columns: repeat(12,1fr);
-    grid-gap: 20px;
+
+/* HEADER TOP */
+/* HEADER BOTTOM*/
+.logo-wrapper{
+    text-align: center;
+}
+.logo-wrapper img{
+    width: 100px;
+}
+.search-wrapper input{
+    width: 100%;
+    border-width: 1px;
+    border-radius: 15px 0 0 15px;
+    padding-left: 10px;
+}
+.search-wrapper img{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+.search-wrapper button{
+    border: none;
+    border: 1px solid black;
+    border-radius: 0 15px 15px 0;
+    margin-right: 20px;
+}
+.header-top a{
+    margin-right: 10px;
+}
+.mobile-menu img{
+    max-width: 35px;
+}
+.navbar{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-wrapper{
+    background-image: url("./shoes_image.webp"), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-size: cover;
+    background-blend-mode: overlay;
+    height: 400px;
+    color: white;
+    text-align: center;
+}
+
+.hero{
+    width: 100%;
+}
+.hero-wrapper > .container{
+    height: 100%;
+    /*background-color: green;*/
+    /*padding-top: 40%;*/
+}
+.hero-text{
+    height: inherit;
+}
+.hero-logo{
+    filter: invert(100%);
+    width: 150px;
+}
+/*.hero-text{*/
+/*    height: 100%;*/
+/*}*/
+/* CONTENT */
+.content{
     background-color: pink;
+    min-height: 75vh;
 }
-/* Mobile-Tablet */
-.page-wrapper{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
+footer{
+    min-height: 25vh;
+    background-color: lightblue;
 }
-/* Mobile-Desktop */
-.page-wrapper{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+@media screen and (min-width: 768px){
+    .mobile-menu{
+        display: none;
+    }
+    .navbar{
+        display: flex;
+    }
+    .hero-wrapper{
+        height: 500px;
+    }
+    .hero-logo{
+        width: 200px;
+    }
+
 }
