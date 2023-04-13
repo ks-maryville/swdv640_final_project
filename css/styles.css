@@ -60,7 +60,7 @@ a {
 }
 
 .hero-wrapper {
-    background-image: url("./shoes_image.webp"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url("../images/shoes_image.webp"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-size: cover;
     background-blend-mode: overlay;
     height: 400px;
@@ -152,7 +152,7 @@ footer .container{
     }
 
     .hero-wrapper {
-        height: 500px;
+        height: 700px;
     }
 
     .hero-logo {
