@@ -109,13 +109,17 @@ a {
 footer {
     min-height: 100px;
     /*background-color: lightblue;*/
-    padding-bottom: 20px;
+    padding: 20px 0;
     margin-top: 65px;
+    border-top: 1px solid black;
+
 }
 footer .container{
     height: 100%;
 }
 .social{
+    text-align: center;
+    /*margin: 0;*/
     /*background-color: pink;*/
 }
 .social p{
@@ -128,6 +132,12 @@ footer .container{
 }
 .social img{
     width: 100%;
+}
+.footer-nav{
+    text-align: center;
+}
+.footer-nav ul{
+    padding: 0;
 }
 
 @media screen and (min-width: 768px) {
