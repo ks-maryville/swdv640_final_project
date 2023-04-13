@@ -118,9 +118,8 @@ footer .container{
     height: 100%;
 }
 .social{
-    text-align: center;
-    /*margin: 0;*/
-    /*background-color: pink;*/
+    /*text-align: center;*/
+
 }
 .social p{
     width: 100%;
@@ -139,7 +138,10 @@ footer .container{
 .footer-nav ul{
     padding: 0;
 }
-
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+}
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
