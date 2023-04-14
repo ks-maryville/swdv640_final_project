@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@color-1: #04080F;
+@color-2: #BBD1EA;
+@color-3: #507DBC;
+@color-4: white;
+@font-primary: Roboto;
+* {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+body {
+  height: 100vh;
+  font-family: @font-primary;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+
+.btn() {
+  border: none;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.btn-primary {
+  .btn();
+  color: @color-4;
+  border-color: @color-3;
+  background-color: @color-2;
+}
+
+.btn-secondary {
+  .btn();
+  color: @color-3;
+  border-color: @color-3;
+  background-color: @color-4;
+}
+
+.search-button:extend(.btn-primary) {
+  border-radius: 0 15px 15px 0;
+  margin-right: 10px;
+}
+
+
+.navbar {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  a {
+    color: @color-3;
+  }
+}
+
+.logo-wrapper {
+  text-align: center;
+
+  img {
+    width: 100px;
+  }
+}
+
+.search-wrapper {
+  input {
+    width: 100%;
+    border: 1px solid @color-3;
+    border-radius: 15px 0 0 15px;
+    padding-left: 10px;
+  }
+
+  img {
+    display: block;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.mobile-menu {
+  img {
+    max-width: 35px;
+
+  }
+}
+
+.hero {
+  width: 100%;
+}
+
+.hero-wrapper {
+  background-image: url("../images/shoes_image.webp"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-blend-mode: overlay;
+  height: 400px;
+  color: white;
+  text-align: center;
+
+  .container {
+    height: 100%;
+  }
+
+  .hero-logo {
+    width: 150px;
+    margin-bottom: 10px;
+
+    path {
+      fill: @color-2;
+      width: 150px;
+    }
+  }
+
+  .hero-text {
+    height: inherit;
+  }
+}
+
+/* CONTENT */
+.content {
+  /*background-color: pink;*/
+  margin-top: 20px;
+  min-height: 75vh;
+}
+
+.featured, .top-sellers {
+  .product {
+    background-color: beige;
+    height: 300px;
+    margin-bottom: 5px;
+  }
+}
+
+
+footer {
+  min-height: 100px;
+  background-color: @color-1;
+  color: @color-2;
+  padding: 20px 0;
+  margin-top: 65px;
+  border-top: 1px solid @color-1;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.social {
+  p {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .social-wrapper {
+    .image-wrapper {
+      width: 50px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer-nav{
+  text-align: center;
+  a{
+    color: @color-2;
+  }
+  ul{
+    padding: 0;
+  }
+}
+
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navbar {
+    display: flex;
+  }
+
+  .hero-wrapper {
+    height: 700px;
+    .hero-logo{
+      width: 200px;
+    }
+  }
+  .featured, .top-sellers{
+    .product{
+      background-color: beige;
+      height: 200px;
+      width: 19%;
+      /*margin-bottom: 5px;*/
+      color: green;
+    }
+  }
+}
