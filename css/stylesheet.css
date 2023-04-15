@@ -176,9 +176,16 @@ a {
 }
 .featured .product,
 .top-sellers .product {
-  background-color: beige;
-  height: 300px;
+  min-height: 300px;
   margin-bottom: 5px;
+}
+.featured .product img,
+.top-sellers .product img {
+  width: 100%;
+}
+.featured .product p,
+.top-sellers .product p {
+  margin: 0;
 }
 footer {
   min-height: 100px;
@@ -230,11 +237,8 @@ footer .container {
   }
   .featured .product,
   .top-sellers .product {
-    background-color: beige;
-    height: 200px;
     width: 19%;
     /*margin-bottom: 5px;*/
-    color: green;
   }
 }
 /*# sourceMappingURL=stylesheet.css.map */
