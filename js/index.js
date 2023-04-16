@@ -36,21 +36,10 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     const product = document.querySelector(".product");
     console.log(product);
-    // const storeProduct = (e) => {
-    //     console.log("product stored");
-    //     const id = e.target.dataset.productid;
-    //     const filtered = data.filter(product => product.id === parseInt(id));
-    //     localStorage.setItem("selected", JSON.stringify(filtered[0]));
-    // }
-    // const storeCategory = (e)=>{
-    //     const category = e.target.dataset.category;
-    //     const filtered = data.filter(product=>product.gender === category)
-    //     localStorage.setItem("selectedCategory", JSON.stringify(filtered))
-    // }
+
     Array.from(index.element.products).forEach(item=>item.addEventListener('click', (e)=>storeProduct(e)));
 
     Array.from(index.element.categoryLinks).forEach(item=>item.addEventListener('click', (e)=>storeCategory(e)))
-    // Shoe Page
 
 })
 

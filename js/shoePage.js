@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', ()=>{
             infoRight: document.querySelector("#infoRight").innerHTML
         }
     }
-    console.log(shoePage.template.infoLeft);
+
     const shoePageData = {
         data: localStorage.getItem("selected") && JSON.parse(localStorage.getItem('selected'))
     }
