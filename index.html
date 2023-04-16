@@ -11,7 +11,11 @@
           integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="css/stylesheet.css">
     <script type="text/javascript" src="./js/mustache.js"></script>
-    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="module" src="/js/index.js"></script>
+    <script type="module" src="/js/storeData.mjs"></script>
+<!--    <script type="module" src="/js/elements.js"></script>-->
+    <script type="module" src="/js/data.js"></script>
+    <script type="module" src="/js/persist.js"></script>
 </head>
 <body class="app">
 <script id="featuredProducts" type="x-tmpl-mustache">
@@ -66,9 +70,9 @@
                 </div>
 
                 <nav class="navbar col-6 col-md-5">
-                    <a href="" class="text-decoration-none men-link">Men</a>
-                    <a href="" class="text-decoration-none">Women</a>
-                    <a href="" class="text-decoration-none">Kids</a>
+                    <a href="./categoryPage.html" class="text-decoration-none men-link category-link" data-category="mens">Men</a>
+                    <a href="./categoryPage.html" class="text-decoration-none category-link" data-category="womens">Women</a>
+                    <a href="./categoryPage.html" class="text-decoration-none category-link" data-category="kids">Kids</a>
                     <a href="" class="login"><span>|</span> &nbsp Login</a>
                     <a href="" class="logout">Logout</a>
                 </nav>
@@ -191,15 +195,15 @@
                 <ul>
 
                     <li>
-                        <a href="">Mens</a>
+                        <a href="" class="category-link" data-category="mens">Mens</a>
                     </li>
 
                     <li>
-                        <a href="">Womens</a>
+                        <a href="" class="category-link" data-category="womens">Womens</a>
                     </li>
 
                     <li>
-                        <a href="">Kids</a>
+                        <a href="" class="category-link" data-category="kids">Kids</a>
                     </li>
 
                 </ul>

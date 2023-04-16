@@ -1,5 +1,5 @@
-
 window.addEventListener('DOMContentLoaded', ()=>{
+
     const shoePage = {
         element: {
             leftInfo: document.querySelector('.infoLeft'),

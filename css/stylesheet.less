@@ -124,6 +124,10 @@ a {
   /*background-color: pink;*/
   margin-top: 20px;
   min-height: 75vh;
+  .row:nth-child(2){
+    padding-top: 20px;
+    margin-top: 50px;
+  }
 }
 
 .featured, .top-sellers {
@@ -137,6 +141,12 @@ a {
     p{
       margin: 0;
     }
+  }
+}
+.similar{
+  //background-color: pink;
+  img{
+    width: 100%;
   }
 }
 
@@ -209,12 +219,18 @@ footer {
       width: 200px;
     }
   }
-  .featured, .top-sellers{
+  .featured, .top-sellers, .similar{
     .product{
       //background-color: beige;
       //height: 200px;
       width: 19%;
       /*margin-bottom: 5px;*/
+    }
+  }
+  .similar{
+    //background-color: pink;
+    img{
+      width: 50%;
     }
   }
 }
